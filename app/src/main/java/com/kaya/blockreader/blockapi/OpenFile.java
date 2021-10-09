@@ -1,9 +1,6 @@
 package com.kaya.blockreader.blockapi;
 
-import android.content.Context;
-import android.util.Log;
 
-import com.kaya.blockreader.blockApplication;
 import com.kaya.blockreader.utils.ListDataSaveUtil;
 import com.kaya.blockreader.utils.ScreenUtils;
 
