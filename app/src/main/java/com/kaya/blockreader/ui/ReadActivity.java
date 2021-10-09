@@ -48,11 +48,6 @@ public class ReadActivity extends AppCompatActivity {
         bookid = getIntent.getStringExtra("bookid");
         openFile = new OpenFile(input,bookid);
 
-        try {
-            Log.d("TAG", "test" + openFile.test());
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        }
         readBlockManager = new ReadBlockManager();
         try {
             datas.add(openFile.LinesTest());
@@ -93,7 +88,6 @@ public class ReadActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         ListDataSaveUtil.getInstance().SetReadProgress(bookid,openFile.getReadLocations().get(ReadPosition));
-        Log.d("TAG", "onDestroy: "+openFile.getReadLocations().toString());
     }
 
     public static void actionStart(Context context, String data1, String bookid) {
