@@ -12,8 +12,6 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Environment;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -23,7 +21,6 @@ import android.widget.Toast;
 
 import com.kaya.blockreader.R;
 import com.kaya.blockreader.adapter.BookListAdapter;
-import com.kaya.blockreader.blockapi.ReadBlockManager;
 import com.kaya.blockreader.model.bookshelf_item;
 import com.kaya.blockreader.utils.FileUtils;
 import com.kaya.blockreader.utils.ListDataSaveUtil;

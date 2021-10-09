@@ -17,7 +17,6 @@ import com.kaya.blockreader.blockapi.OpenFile;
 import com.kaya.blockreader.blockapi.ReadBlockManager;
 import com.kaya.blockreader.utils.ListDataSaveUtil;
 
-import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
 
