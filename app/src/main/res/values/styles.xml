@@ -1,0 +1,31 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="overlapAnchor">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AlertDialog" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:windowBackground">@color/setModeDialogBackgroundColor</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <!-- 设置Toolbar标题字体的颜色大小 -->
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">40sp</item><!--toolbar标题字体大小-->
+        <item name="android:textColor">#4CAF50</item><!--toolbar标题字体颜色-->
+    </style>
+    <!--toolbat mean的字体颜色和大小-->
+    <style name="ToolbarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColorPrimary">#4CAF50</item> <!--menu字体颜色-->
+        <item name="android:textSize">24sp</item> <!--menu字体大小-->
+        <item name="overlapAnchor">false</item>
+    </style>
+    <!-- 设置Toolbar 子标题subtitle标题字体的大小 -->
+    <style name="Toolbar.SubTitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">15sp</item><!--子标题字体大小-->
+        <item name="android:textColor">#8BC34A</item><!--子标题字体颜色-->
+    </style>
+</resources>

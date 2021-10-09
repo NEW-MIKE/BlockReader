@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">估記</string>
+    <string name="read_mode_set">阅读模式设置</string>
+    <string name="read_color_set">阅读背景设置</string>
+    <string name="book_list">估記</string>
+    <string name="delete_book">是否删除</string>
+    <string name="sure_delete">确定删除</string>
+    <string name="cancel_delete">取消删除</string>
+    <string name="mode_set_ok">OK</string>
+    <string name="mode_set_title">请设定背诵时的空格个数</string>
+    <string name="set_mode_number"></string>
+    <string name="add_book">前往仓库</string>
+</resources>
