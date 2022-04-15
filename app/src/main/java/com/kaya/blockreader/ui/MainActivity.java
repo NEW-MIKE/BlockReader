@@ -36,7 +36,7 @@ import com.permissionx.guolindev.request.ForwardScope;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     private RecyclerView booklistRecycleView;
     private BookListAdapter bookListAdapter;
@@ -152,9 +152,20 @@ public class MainActivity extends AppCompatActivity {
 
         if (requestCode == 1 && resultCode == RESULT_OK) {
             String filePath = data.getStringExtra(FilePickerActivity.RESULT_FILE_PATH);
-            databooklist.add(new bookshelf_item(bookshelf_item.SHOW_TYEP,FileUtils.getFileNameNotType(filePath),filePath,""+System.currentTimeMillis()));
-            ListDataSaveUtil.getInstance().setDataList(bookshelf_item.BOOK_TAG,databooklist);
-            bookListAdapter.notifyDataSetChanged();
+            int flag = 0;
+            for(bookshelf_item mbookshelf_item:databooklist){
+                if(mbookshelf_item.getBookurl().equals(filePath)){
+                    flag = 1;
+                }
+            }
+            if(flag == 0){
+                databooklist.add(new bookshelf_item(bookshelf_item.SHOW_TYEP, FileUtils.getFileNameNotType(filePath),filePath,""+System.currentTimeMillis()));
+                ListDataSaveUtil.getInstance().setDataList(bookshelf_item.BOOK_TAG,databooklist);
+                bookListAdapter.notifyDataSetChanged();
+            }
+            else {
+                Toast.makeText(this,"重复添加书籍",Toast.LENGTH_LONG).show();
+            }
         }
     }
 }

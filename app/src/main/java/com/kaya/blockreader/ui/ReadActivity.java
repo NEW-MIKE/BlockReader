@@ -20,7 +20,7 @@ import com.kaya.blockreader.utils.ListDataSaveUtil;
 import java.util.ArrayList;
 
 
-public class ReadActivity extends AppCompatActivity {
+public class ReadActivity extends BaseActivity {
 
     private ViewPager viewPager;
     private ReadBlockManager readBlockManager;
