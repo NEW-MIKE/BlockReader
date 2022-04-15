@@ -11,6 +11,7 @@ public class blockApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        mblockApplication=this;
         ListDataSaveUtil.init(this);
         AppUtils.init(this);
     }
